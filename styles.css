@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+/*body settings*/
+body{
+   margin:0;
+   background-color: black;
+   font-family: 'Work Sans', sans-serif;
+   font-weight: 800;
+   min-height: 100vh;
+    position: relative;
+}
+
+/*nav header class*/
+.header-container{
+    width: 80%;
+	margin-left: 70px;
+    
+  }
+
+header{
+    background: linear-gradient(to right, #070707, #f9f8f8);
+    height: 90px;
+}
+
+/*logo position*/
+.logo{
+  
+  height: 110px;
+  float: left;
+  
+}
+
+/*nav position and style*/
+nav{
+    float: right;
+}
+
+nav ul 
+{
+    list-style: none;
+    margin: 0;
+    margin-right: 200px;
+    padding: 0;
+} 
+
+nav li{
+  display: inline-block;
+  margin-left: 100px;
+  padding-top: 40px;
+
+  position: relative;
+}
+
+
+nav a{
+  color: #f7f6f6;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;   
+    
+}
+
+nav a:hover {
+    color: #040404;
+  }
+/*style the line over the nav text*/
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #faf8f8;
+  
+    position: absolute;
+    top: 10px;
+    width: 0%;
+  
+    transition: all ease-in-out 250ms;
+  }
+  
+nav a:hover::before {
+    width: 100%;
+  }
+  
+
+/*call text in the index page*/
+.call-section{
+    margin: 0;
+    width: 100%;
+    
+}
+
+.call-text h1{
+    color: white;
+    margin-top: 100px;
+    margin-left: 400px;
+    padding: 0;
+    text-align: left;
+    font-size: 30px;
+}
+
+.call-text p{
+    color: white;
+    margin-top: 50px;
+    margin-left: 400px;
+    margin-right: 150px;
+    width: 800px;
+    padding: 0;
+    margin-bottom: 50px;
+    line-height: 2.0;
+}
+/*index page button style*/
+button{
+    margin-left: 400px;
+}
+
+.procure-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #302f35;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/*style the car info section*/
+
+.car-info-section{
+    margin: 0;
+    background-image: url(Assets/giphy.gif);
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+}
+/*divide the text in 3 articles*/
+
+.car-info-container{
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cria três colunas de largura igual */
+    gap: 80px; /* Adiciona espaço entre as colunas */
+    
+    
+}
+
+.column {
+    margin-top: 170px;
+    padding: 20px;
+    color:white;
+    text-align:left;
+    font-size: 20px;
+    width: 100%;
+       
+}
+
+.column h2{
+    text-align: left;
+    font-size: 30px;
+}
+
+.column p{
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/*style company info*/
+.company-info-container{
+    margin-top: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 0;
+    color: white;
+
+}
+
+.company-info-container h1{
+    font-size:30px;
+    text-align: center;
+}
+
+.company-info-container p{
+    font-size: 18px;
+    text-align: center;
+    line-height: 2.0;
+}
+
+/*style the button in the company info section*/
+.info-button {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #302f35;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/*VEHICLES NAV STYLES*/
+
+.background{
+    background-image: url(Assets/background.png);
+    width: 100%;
+    height: 800px;
+}
+
+.models-nav ul{
+    margin-left: 180px;
+}
+
+.models-nav li{
+    
+    display: inline-block;
+    margin-left: 100px;
+    padding-top: 40px;
+    position: relative;
+}
+
+.models-nav a{
+    
+    color: #f7f6f6;
+    text-decoration: none;
+    font-size: 30px;      
+}
+
+.models-nav ul li:hover{
+    text-shadow: 30px 30px 30px rgb(128, 114, 114);/*add shadow hover to the text*/
+    transform: scale(1.3);/*make the text a little bigger*/
+}
+
+/*ROADSTER page style*/
+
+.roadster-pictures{
+    border-radius: 10px;
+    float: none;
+    margin-top: 80px;
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr); /* Cria três colunas de largura igual */
+    gap: 40px; /* Adiciona espaço entre as colunas */
+}
+
+.roadster-pictures img{
+    border-radius: 10px;
+}
+
+.car-09{
+    color:white;
+    margin-left: 320px;
+    max-width: 100%;
+    bottom: 500px;
+    position: relative;
+    font-size:20px;
+}
+
+.car-10{
+    color:white;
+    margin-left: 1020px;
+    max-width: 100%;
+    bottom: 540px;
+    position: relative;
+    font-size:20px;
+}
+
+.car-11{
+    color:white;
+    margin-left: 305px;
+    max-width: 100%;
+    bottom: 160px;
+    position: relative;
+    font-size:20px;
+}
+
+.car-12{
+    color:white;
+    margin-left: 990px;
+    max-width: 100%;
+    bottom: 200px;
+    position: relative;
+    font-size:20px;
+}
+
+/*Tourabout page style*/
+.tourabout-pictures img{
+    border-radius: 10px;
+}
+
+.tourabout-pictures{
+    
+    float: none;
+    margin-top: 110px;
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
+
+}
+
+.car-b{
+    color:white;
+    margin-left: 310px;
+    max-width: 100%;
+    bottom: 45px;
+    position: relative;
+    font-size:20px;
+}
+
+.car-t{
+    color:white;
+    margin-left: 980px;
+    max-width: 100%;
+    bottom: 90px;
+    position: relative;
+    font-size:20px;
+}
+
+/*Touring page styles*/
+
+.touring-pictures img{
+    border-radius: 10px;
+}
+
+.touring-pictures{
+    float: none;
+    margin-top: 80px;
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr); /* Cria três colunas de largura igual */
+    gap: 40px; /* Adiciona espaço entre as colunas */
+}
+
+.touring-11{
+    color:white;
+    margin-left: 320px;
+    max-width: 100%;
+    bottom: 490px;
+    position: relative;
+    font-size:20px;
+}
+
+.Touring-14{
+    color:white;
+    margin-left: 1020px;
+    max-width: 100%;
+    bottom: 530px;
+    position: relative;
+    font-size:20px;
+}
+
+.Touring-16{
+    color:white;
+    margin-left: 305px;
+    max-width: 100%;
+    bottom: 160px;
+    position: relative;
+    font-size:20px;
+}
+
+.Touring-20{
+    color:white;
+    margin-left: 1020px;
+    max-width: 100%;
+    bottom: 200px;
+    position: relative;
+    font-size:20px;
+}
+
+/*runabout page styles*/
+
+.runabout-pictures img{
+    border-radius: 10px;
+}
+
+.runabout-pictures{
+    float: none;
+    margin-top: 80px;
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr); 
+    gap: 40px; 
+}
+
+.runabout-15{
+    color:white;
+    margin-left: 320px;
+    max-width: 100%;
+    bottom: 490px;
+    position: relative;
+    font-size:20px;
+}
+
+.runabout-17{
+    color:white;
+    margin-left: 1020px;
+    max-width: 100%;
+    bottom: 530px;
+    position: relative;
+    font-size:20px;
+}
+
+.runabout-20{
+    color:white;
+    margin-left: 305px;
+    max-width: 100%;
+    bottom: 160px;
+    position: relative;
+    font-size:20px;
+}
+
+.runabout-22{
+    color:white;
+    margin-left: 1020px;
+    max-width: 100%;
+    bottom: 200px;
+    position: relative;
+    font-size:20px;
+}
+
+/*Info page Style*/
+
+.infos{
+    
+    color:white;
+    text-align: justify;
+    margin-top:100px;
+    margin-left: 300px;
+    margin-right: 300px;
+    line-height: 2.0;
+    
+}
+
+.infos h2{
+    text-transform: uppercase;
+}
+
+/*Service page style*/
+
+.service-container{
+   
+    color:white;
+    margin-left: 400px;
+    margin-right: 300px;
+    line-height: 2.0;
+}
+
+.support-section{
+    color:white;
+    margin-left: 400px;
+    margin-right: 300px;
+    line-height: 2.0;
+}
+
+.contact-section{
+    color:white;
+    margin-left: 400px;
+    margin-right: 300px;
+    line-height: 2.0;
+}
+
+.contact-container button{
+    margin-left: 5px;
+    background-color: gray;
+}
+
+/*comments and feedback section style*/
+
+.comments-section{
+    margin-top:200px;
+    color:rgb(246, 248, 249);
+    margin-left:550px;
+}
+
+.feedback1{
+    background-color: rgb(99, 99, 99);
+    width: 40%;
+}
+
+.feedback2{
+    background-color:rgb(99, 99, 99);
+    width: 40%;
+}
+
+
+
+
+/*footer style*/
+
+
+.footer{
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    color:white;
+    bottom: 0;
+    width: 100%;
+    margin-top:200px ;
+}
+
+/*style for javascript function in the cars pictures*/
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
